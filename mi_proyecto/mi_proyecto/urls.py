@@ -20,3 +20,10 @@ from django.urls import path
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
+
+from django.urls import path
+from mi_app import views
+
+urlpatterns = [
+    path('mi_app/hola/', views.hola_mundo, name='hola_mundo'),
+]
